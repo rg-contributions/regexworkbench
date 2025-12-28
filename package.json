@@ -1,7 +1,7 @@
 {
-	"name": "regexworkbench",
-	"displayName": "Regex Workbench",
-	"description": "A workbench to design, test, and experiment with regular expressions",
+	"name": "regexworkbench-fixed",
+	"displayName": "Regex Workbench Fixed",
+	"description": "A workbench to design, test, and experiment with regular expressions (Fixed version)",
 	"keywords": [
 		"regex",
 		"regexes",

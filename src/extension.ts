@@ -175,7 +175,9 @@ class RegexWorkbenchPanel {
 
 		this._panel.dispose();
 
-		this._pcre.dispose();
+		if (this._pcre) {
+			this._pcre.dispose();
+		}
 
 		while (this._disposables.length) {
 			const x = this._disposables.pop();
@@ -215,7 +217,8 @@ class RegexWorkbenchPanel {
 				}
 			}
 		}
-		catch (e) {
+		catch (err) {
+			const e = err as any;
 			let message = "Invalid regular expression";
 
 			message = 'message' in e ? message + `: ${e.message}` : message;
